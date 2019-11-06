@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -yq jq gconf-service libasound2 libatk1.0-
 
 # GD graphics lib
 RUN echo "deb http://httpredir.debian.org/debian stable main contrib" >> /etc/apt/sources.list.d/nonfree.list
-RUN apt-get update && apt-get install -y libgd-dev ttf-mscorefonts-installer
+RUN apt-get update && apt-get install -y ttf-mscorefonts-installer
 
 # Fonts
 RUN echo "deb http://ppa.launchpad.net/no1wantdthisname/ppa/ubuntu trusty main" | tee /etc/apt/sources.list.d/infinality.list && \
